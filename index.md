@@ -5,9 +5,11 @@ title: Home
 
 # About
 
-{{site.title}}
+{{site.title}} 
 
 {{site.description}}
+
+See source code at [Github](https://github.com/harrywang/tailpages)
 
 # Tutorial
 
