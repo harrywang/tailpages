@@ -1,0 +1,18 @@
+{
+  "name": "tailpages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/harrywang/tailpages.git",
+  "author": "Harry Wang <harryjwang@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.12"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.5.1"
+  }
+}
