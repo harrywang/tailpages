@@ -6,7 +6,12 @@ A Github Pages (Jekyll) template starter based on TailwindCSS
 
 # Tutorial
 
-This tutorial shows how you start a brand new Jekyll site based on TailwindCSS, which can be hosted by Github Pages
+This tutorial shows how you start a brand new Jekyll site based on TailwindCSS, which can be hosted by Github Pages. 
+
+This tutorial is based on the following tutorials:
+
+- https://medium.com/@mauddev/jekyll-tailwind-netlify-9496352b49ee
+- https://medium.com/@mehdi.h/using-jekyll-with-tailwindcss-on-github-pages-50c3d8401230
 
 ## Create a empty Github repo: 
 

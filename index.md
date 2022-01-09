@@ -13,7 +13,7 @@ See source code at [Github](https://github.com/harrywang/tailpages)
 
 # Tutorial
 
-This tutorial shows how you start a brand new Jekyll site based on TailwindCSS, which can be hosted by Github Pages
+This tutorial shows how you start a brand new Jekyll site based on TailwindCSS, which can be hosted by Github Pages.
 
 ## Create a empty Github repo: 
 
