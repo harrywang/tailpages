@@ -1,0 +1,50 @@
+<header class="relative bg-blueGray-200">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap text-center">
+        <div class="w-full px-4 pt-4">
+          <div>
+            {% if site.twitter %}
+            <button
+              class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+            <a
+            href="{{site.twitter}}"
+            class="fab fa-twitter !no-underline"
+            >
+            </a>
+
+            </button>
+            {% endif %}
+
+            {% if site.facebook %}
+            <button
+              class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+            <a
+            href="{{site.facebook}}"
+            class="fab fa-facebook !no-underline"
+            >
+            </a>
+          </button>
+            {% endif %}
+
+            {% if site.github %}
+            <button
+              class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+            <a
+            href="{{site.github}}"
+            class="fab fa-github !no-underline"
+            >
+            </a>
+          </button>
+            {% endif %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>

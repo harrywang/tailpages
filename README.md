@@ -129,8 +129,6 @@ Create a new CSS file with the path `/assets/css/main.css` with the following co
 @tailwind components;
 ```
 
-Build tailwindcss: `npx tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css`
-
 Add a default layout HTML file to use tailwindcss at `_layouts/default.html`:
 
 ```
@@ -144,26 +142,30 @@ Add a default layout HTML file to use tailwindcss at `_layouts/default.html`:
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css">
 
   </head>
-  <body class="font-sans mx-auto max-w-prose">
+  <body class="font-sans mx-auto m-4 max-w-prose">
   <div class="prose prose-yellow prose-lg">
     {{ content }}
   </div>
   </body>
 </html>
 ```
-Change the `index.md` to use the new template with some basic markdown contents:
+## Build Tailwind
+
+Run `npx tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css` to bulid the css file.
+
+- if you specify `content: ['./**/*.html']` in `tailwind.config.js`, this step scans all html files in this folder and generate the used styles into tailwind.css file. For example, if you never used `m-6` in any html file - it won't be ouput into the file. 
+- add `--watch` to make sure that the css is regenerated whenever a change is detected in HTML/JS files. 
+
+create a `page.html` layout to add footer and use a page variable `page.title`. Now, change the `index.md` to use the new template with some basic markdown contents:
 
 ```
 ---
-layout: default
-title: Home
+layout: page
+title: About
 ---
-
-# Tailpages
 ...
 
 ```
-
 
 ## Github Pages Settings
 
