@@ -1,24 +1,28 @@
-title: "Tailpages: Tailwind + Github Pages"
-author-name: Harry Wang
-author-email: harryjwang@gmail.com
-author-website: https://harrywang.me
-description: A Github Pages (Jekyll) template based on TailwindCSS
-baseurl: "/tailpages" # the subpath of your site, e.g. /blog
-url: "https://harrywang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-footer-msg: "Powered by Tailpages Theme"
-footer-msg-link: https://github.com/harrywang/tailpages
+# change the followings to match your Github username and repo name
+baseurl: "/tailpages" # the name of your github repo
+url: "https://harrywang.github.io" # the url of your github pages
 
-google-analytics: G-WCRC1TC2V5
+# site information used in page title, meta data etc.
+title: "Tailpages: Tailwind + Github Pages"
+description: A Github Pages (Jekyll) template based on TailwindCSS
+
+# homepage information
+author-name: Satoshi Nakamoto
+author-bio: Creator of Bitcoin  # change to false to hide
+author-image: 279.png  # file must be in the /assets/img/ folder
 
 # use false to turn off any social media links
-facebook: false
-twitter: https://twitter.com/harryjwang
-github: https://github.com/harrywang/tailpages
+twitter: https://twitter.com/
+facebook: https://facebook.com/
+instagram: https://instagram.com/
+github: https://github.com/
+linkedin: https://linkedin.com/
+medium: false
+email: false
 
-plugins:
-  - jekyll-feed
+# footer information
+footer-msg: "Powered by Tailpages"
+footer-msg-link: https://github.com/harrywang/tailpages
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
+# google analytics
+google-analytics: G-WCRC1TC2V5

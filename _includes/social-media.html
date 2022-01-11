@@ -1,50 +1,73 @@
-<header class="relative bg-blueGray-200">
-    <div class="container mx-auto">
-      <div class="flex flex-wrap text-center">
-        <div class="w-full px-4 pt-4">
-          <div>
-            {% if site.twitter %}
-            <button
-              class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-              type="button"
-            >
-            <a
-            href="{{site.twitter}}"
-            class="fab fa-twitter"
-            >
-            </a>
+<section>
+  <div class="flex flex-wrap text-center">
+    <div class="w-full pt-4">
+      <div>
+        {% if site.twitter %}
+        <button
+          class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          type="button">
+          <a href="{{site.twitter}}" class="fab fa-twitter" target="_blank">
+          </a>
 
-            </button>
-            {% endif %}
+        </button>
+        {% endif %}
 
-            {% if site.facebook %}
-            <button
-              class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-              type="button"
-            >
-            <a
-            href="{{site.facebook}}"
-            class="fab fa-facebook"
-            >
-            </a>
-          </button>
-            {% endif %}
+        {% if site.facebook %}
+        <button
+          class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          type="button">
+          <a href="{{site.facebook}}" class="fab fa-facebook" target="_blank">
+          </a>
 
-            {% if site.github %}
-            <button
-              class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-              type="button"
-            >
-            <a
-            href="{{site.github}}"
-            class="fab fa-github"
-            >
-            </a>
-          </button>
-            {% endif %}
-          </div>
-        </div>
+        </button>
+        {% endif %}
+
+        {% if site.instagram %}
+        <button
+          class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          type="button">
+          <a href="{{site.instagram}}" class="fab fa-instagram" target="_blank">
+          </a>
+        </button>
+        {% endif %}
+
+        {% if site.github %}
+        <button
+          class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          type="button">
+          <a href="{{site.github}}" class="fab fa-github" target="_blank">
+          </a>
+        </button>
+        {% endif %}
+
+        {% if site.linkedin %}
+        <button
+          class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          type="button">
+          <a href="{{site.linkedin}}" class="fab fa-linkedin" target="_blank">
+          </a>
+        </button>
+        {% endif %}
+
+        {% if site.medium %}
+        <button
+          class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          type="button">
+          <a href="{{site.medium}}" class="fab fa-medium" target="_blank">
+          </a>
+        </button>
+        {% endif %}
+
+        {% if site.email %}
+        <button
+          class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          type="button">
+          <a href="{{site.email}}" class="fas fa-paper-plane" target="_blank">
+          </a>
+        </button>
+        {% endif %}
 
       </div>
     </div>
-  </footer>
+  </div>
+</section>

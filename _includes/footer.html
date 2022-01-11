@@ -1,15 +1,14 @@
-<footer class="relative pb-4">
-      <hr class="my-6" />
-      <div class="flex flex-wrap items-center justify-center">
-          <div class="py-1 prose prose-indigo prose-sm ">
-            © <span id="get-current-year"></span> 
-            <a
-              href="{{site.footer-msg-link}}"
-              class="!no-underline"
-            >
-              {{site.footer-msg}}
-            </a>
-          </div>
-      </div>
+<footer class="relative px-4 pt-4 pb-4">
+  <hr class="my-8" />
+  <div class="flex flex-wrap items-center justify-center">
+    <div class="text-sm text-gray-500">
+      © <span id="get-current-year"></span>
+      {% if site.footer-msg %}
+      <a href="{{site.footer-msg-link}}" class="!no-underline">
+        {{site.footer-msg}}
+      </a>
+      {% endif %}
     </div>
-  </footer>
+  </div>
+  </div>
+</footer>

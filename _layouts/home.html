@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="mx-auto text-center prose prose-indigo">
+  <div>
+    <img class="object-cover mx-auto h-36 w-36 rounded-full" src="{{site.baseurl}}/assets/img/{{site.author-image}}"
+      alt="author profile image">
+    <h1>{{site.author-name}}</h1>
+  </div>
+  {% if site.author-bio %}
+  <p class="text-lg text-gray-500">{{site.author-bio}}</p>
+  {% endif %}
+</div>
+</div>
+
+{% include social-media.html %}
+{% include footer.html %}
