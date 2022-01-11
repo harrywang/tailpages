@@ -1,8 +1,12 @@
 title: "Tailpages: Tailwind + Github Pages"
-email: harryjwang@gmail.com
+author-name: Harry Wang
+author-email: harryjwang@gmail.com
+author-website: https://harrywang.me
 description: A Github Pages (Jekyll) template based on TailwindCSS
 baseurl: "/tailpages" # the subpath of your site, e.g. /blog
 url: "https://harrywang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+footer-msg: "Powered by Tailpages Theme"
+footer-msg-link: https://github.com/harrywang/tailpages
 
 google-analytics: G-WCRC1TC2V5
 

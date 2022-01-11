@@ -2,8 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
-    // if you want to purge unused styles according to all HTML files uncomment the following line
-    //'./**/*.html'
+    './**/*.html'
   ],
   darkMode: 'media',
   theme: {
