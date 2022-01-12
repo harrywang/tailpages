@@ -1,15 +1,18 @@
 ---
 layout: default
 ---
+{% if site.show-nav-menu %}
+  {% include nav.html current-page=page.title%}
+{% endif %}
 
-<div class="mx-auto text-center prose prose-indigo">
+<div class="mx-auto text-center prose prose-{{site.theme-color}}">
   <div>
     <img class="object-cover mx-auto h-36 w-36 rounded-full" src="{{site.baseurl}}/assets/img/{{site.author-image}}"
       alt="author profile image">
     <h1>{{site.author-name}}</h1>
   </div>
   {% if site.author-bio %}
-  <p class="text-lg text-gray-500">{{site.author-bio}}</p>
+  <p class="text-lg text-gray-500 pb-4">{{site.author-bio}}</p>
   {% endif %}
 </div>
 </div>

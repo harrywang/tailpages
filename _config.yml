@@ -6,10 +6,16 @@ url: "https://harrywang.github.io" # the url of your github pages
 title: "Tailpages: Tailwind + Github Pages"
 description: A Github Pages (Jekyll) template based on TailwindCSS
 
+# color theme for links
+theme-color: indigo # indigo|yellow|pink|green|stone|
+
 # homepage information
 author-name: Satoshi Nakamoto
 author-bio: Creator of Bitcoin  # change to false to hide
 author-image: 279.png  # file must be in the /assets/img/ folder
+
+# navigation menu
+show-nav-menu: true
 
 # use false to turn off any social media links
 twitter: https://twitter.com/
