@@ -1,8 +1,8 @@
-<nav class="flex flex-wrap items-center justify-center px-2 py-3 ">
+<nav class="flex flex-wrap items-center justify-center px-2">
     <div class="container px-4 mx-auto flex flex-wrap items-center justify-center">
         <div class="w-full relative flex justify-center">
             <button type="button" onclick="toggleNavbar('navbar')"
-                class="rounded-md p-2 inline-flex items-center justify-center text-gray-500 lg:hidden"
+                class="rounded-md inline-flex items-center justify-center text-gray-500 lg:hidden"
                 aria-expanded="false">
                 <span class="sr-only">Open menu</span>
                 <!-- Heroicon name: outline/menu -->
@@ -13,10 +13,10 @@
             </button>
         </div>
 
-        <div class="flex items-center hidden md:block" id="navbar">
-            <div class="flex justify-end flex-col lg:flex-row list-none mr-auto">
+        <div class="flex h-screenhidden md:block" id="navbar">
+            <div class="flex flex-col lg:flex-row mr-auto w-full">
                 {% if page.url != "/" %} <!-- don't show Home in menu for Homepage -->
-                <a class="text-sm text-gray-500 hover:text-gray-900 px-3 py-2 lg:py-1 flex items-center uppercase"
+                <a class="text-sm text-gray-500 hover:text-gray-900 px-3 py-2 lg:py-1 mx-auto uppercase"
                     href="{{site.baseurl}}/">
                     Home
                 </a>
@@ -25,16 +25,13 @@
                 <!-- dynamic menu based on navigation info in _config.yml -->
                 {% for link in site.nav-menu %}
                     {% if page.permalink != {{link.permalink}} %} <!-- don't show current page in menu -->
-                    <a class="text-sm text-gray-500 hover:text-gray-900 px-3 py-2 lg:py-1 flex items-center uppercase"
+                    <a class="text-sm text-gray-500 hover:text-gray-900 px-3 py-2 lg:py-1 mx-auto uppercase"
                         href="{{site.baseurl}}/{{link.permalink}}">
                         {{link.text}}
                     </a>
                     {% endif %}
                 {% endfor %}
-
-
             </div>
-
         </div>
     </div>
 </nav>
