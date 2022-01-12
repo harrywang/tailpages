@@ -1,10 +1,7 @@
-# About
-
-Tailpages: Tailwind + Github Pages
-
-A Github Pages (Jekyll) template starter based on TailwindCSS
-
-# Tutorial
+---
+layout: post
+title: Tailpages Tutorial Part II
+---
 
 This tutorial shows how you start a brand new Jekyll site based on TailwindCSS, which can be hosted by Github Pages. 
 
@@ -187,3 +184,5 @@ I referred to the following tutorials and code repos to develop this tutorial:
 - https://medium.com/@mehdi.h/using-jekyll-with-tailwindcss-on-github-pages-50c3d8401230
 - [Indigo Minimalist Jekyll Template](https://sergiokopplin.github.io/indigo)
 - [Notus JS: Free Tailwind CSS UI Kit and Admin](https://github.com/creativetimofficial/notus-js)
+
+

@@ -22,6 +22,8 @@ nav-menu:
   permalink: about
 - text: Bitcoin
   permalink: bitcoin
+- text: Blog
+  permalink: blog
 
 # use false to turn off any social media links
 twitter: https://twitter.com/
