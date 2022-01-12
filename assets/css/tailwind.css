@@ -1391,6 +1391,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 1.5rem;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1443,6 +1447,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:place-items-center {
