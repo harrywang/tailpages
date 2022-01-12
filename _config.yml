@@ -17,6 +17,12 @@ author-image: 279.png  # file must be in the /assets/img/ folder
 # navigation menu
 show-nav-menu: true
 
+nav-menu:
+- text: About
+  permalink: about
+- text: Bitcoin
+  permalink: bitcoin
+
 # use false to turn off any social media links
 twitter: https://twitter.com/
 facebook: https://facebook.com/

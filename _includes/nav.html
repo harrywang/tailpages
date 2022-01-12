@@ -15,17 +15,23 @@
 
         <div class="flex items-center hidden md:block" id="navbar">
             <div class="flex justify-end flex-col lg:flex-row list-none mr-auto">
-                {% if include.current-page != "Home" %}
+                {% if page.url != "/" %} <!-- don't show Home in menu for Homepage -->
                 <a class="text-sm text-gray-500 hover:text-gray-900 px-3 py-2 lg:py-1 flex items-center uppercase"
                     href="{{site.baseurl}}/">
                     Home
                 </a>
                 {% endif %}
 
-                <a class="text-sm text-gray-500 hover:text-gray-900 px-3 py-2 lg:py-1 flex items-center uppercase"
-                    href="{{site.baseurl}}/about">
-                    About
-                </a>
+                <!-- dynamic menu based on navigation info in _config.yml -->
+                {% for link in site.nav-menu %}
+                    {% if page.permalink != {{link.permalink}} %} <!-- don't show current page in menu -->
+                    <a class="text-sm text-gray-500 hover:text-gray-900 px-3 py-2 lg:py-1 flex items-center uppercase"
+                        href="{{site.baseurl}}/{{link.permalink}}">
+                        {{link.text}}
+                    </a>
+                    {% endif %}
+                {% endfor %}
+
 
             </div>
 
