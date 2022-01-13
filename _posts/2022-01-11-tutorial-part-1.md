@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tailpages Tutorial Part I
-tags:
+tags: tutorial no-code
 ---
 
 This is the no code part of using Tailpages
