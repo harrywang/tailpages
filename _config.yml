@@ -10,7 +10,7 @@ description: A Github Pages (Jekyll) template based on TailwindCSS
 theme-color: indigo # indigo|yellow|pink|green|stone|
 
 # homepage information
-author-name: Satoshi Nakamoto
+author: Satoshi Nakamoto
 author-bio: Creator of Bitcoin  # change to false to hide
 author-image: 279.png  # file must be in the /assets/img/ folder
 
