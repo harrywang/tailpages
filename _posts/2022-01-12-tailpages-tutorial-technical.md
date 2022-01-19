@@ -9,15 +9,15 @@ Tailpages (Tailwind + Github Pages) is a Jekyll website template based on Tailwi
 Key features are:
 
 - Minimalist design inspired by the [indigo template](https://github.com/sergiokopplin/indigo)
-- Elegent typography via [TailwindCSS Typography plugin](https://tailwindcss.com/docs/typography-plugin) and [Inter font](https://rsms.me/inter/)
-- Markdown support for content authroing (static pages and blogs)
-- Code highligting and styling via [highlight.js](https://highlightjs.org/)
+- Elegant typography via [TailwindCSS Typography plugin](https://tailwindcss.com/docs/typography-plugin) and [Inter font](https://rsms.me/inter/)
+- Markdown support for content authoring (static pages and blogs)
+- Code highlighting and styling via [highlight.js](https://highlightjs.org/) (see [code example](http://harrywang.me/tailpages/2022/01/12/tailpages-tutorial-technical.html))
 
-This is a technical tutorial to show how to setup the development environment for Tailpages from scratch. Another no-code tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding, which you can access at [medium](#) or [blog](http://harrywang.me/tailpages/2022/01/12/tutorial-part-2.html)[blog](http://harrywang.me/tailpages/2022/01/11/tutorial-part-1.html).
+This is a technical tutorial to show how to setup the development environment for Tailpages from scratch. Another no-code tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding, which you can access at [medium](#) or [blog](http://harrywang.me/tailpages/2022/01/11/tailpages-tutorial-nocode.html).
 
 Let's get started by creating an empty Github repo: 
 
-<img class="mx-auto w-1/2" src="https://user-images.githubusercontent.com/595772/148700857-a054dc43-ba82-4913-9635-cd314a8f74b2.png">
+<img class="mx-auto w-3/4" src="https://user-images.githubusercontent.com/595772/148700857-a054dc43-ba82-4913-9635-cd314a8f74b2.png">
 
 Fork and clone the this repo on your computer and go to the cloned folder: 
 
@@ -127,7 +127,7 @@ module.exports = {
 }
 ```
 
-**NOTE**: If this is your first time with Tailwind (just like me), you should know that Tailwind is "just-in-time", i.e., Tailwind CSS is generated on-demand as you develop your html pages/templates instead of being generated in advance at initial build time. For example, if you specify `content: ['./**/*.html']` in `tailwind.config.js` as shown above, the just-in-time engine scans all html files in this folder and generate the used styles into a tailwind output css file. For example, if you never used `m-6` in any html file - it won't be ouputed into the file. 
+**NOTE**: If this is your first time with Tailwind (just like me), you should know that Tailwind is "just-in-time", i.e., Tailwind CSS is generated on-demand as you develop your html pages/templates instead of being generated in advance at initial build time. For example, if you specify `content: ['./**/*.html']` in `tailwind.config.js` as shown above, the just-in-time engine scans all html files in this folder and generate the used styles into a tailwind output css file. For example, if you never used `m-6` in any html file - it won't be outputted into the file. 
 
 
 Now we are ready to generate the Tailwind CSS file. First, create a new CSS file at `/assets/css/main.css` with the following content:
@@ -138,7 +138,7 @@ Now we are ready to generate the Tailwind CSS file. First, create a new CSS file
 @tailwind components;
 ```
 
-Then run `npx tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css --watch` to bulid the css file at `./assets/css/tailwind.css`. `--watch` makes sure that the css is regenerated whenever a change is detected in HTML files. 
+Then run `npx tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css --watch` to build the css file at `./assets/css/tailwind.css`. `--watch` makes sure that the css is regenerated whenever a change is detected in HTML files. 
 
 Now, we can add a default layout HTML file to use Tailwind css at `_layouts/default.html`. Note that I also use [FontAwesome](https://fontawesome.com/) for the icons and [highlight.js](https://highlightjs.org/) for code highlighting.
 
@@ -171,11 +171,11 @@ Now, we can add a default layout HTML file to use Tailwind css at `_layouts/defa
 - `home.html` is the template for the Homepage
 - `page.html` is the template for different pages
 - `post.html` is the template for blog posts
-- `tag.html` is the tempalte for the tag page
+- `tag.html` is the template for the tag page
 
 ## Customize Homepage and Add Pages/Blogs
 
-You can refer to part I of this tutorial for how to customzie homepage and add new pages/blogs.
+You can refer to part I of this tutorial for how to customize homepage and add new pages/blogs.
 
 ## Github Pages Settings
 
@@ -190,9 +190,9 @@ Now, you can test the site: `jekyll serve` and open `http://127.0.0.1:4000/tailp
 
 ## Host with Github Pages
 
-You just need to commit all changes and push to the repo. Then, enable Github Papges and you should be able to visit your site at `https://<username>.github.io/<your-repo>`, such as `https://harrywang.github.io/tailpages` (note that I used a custom domain in the following screenshot):
+You just need to commit all changes and push to the repo. Then, enable Github Pages and you should be able to visit your site at `https://<username>.github.io/<your-repo>`, such as `https://harrywang.github.io/tailpages` (note that I used a custom domain in the following screenshot):
 
-<img width="1138" alt="Screen Shot 2022-01-09 at 4 32 06 PM" src="https://user-images.githubusercontent.com/595772/148701762-6b4e75df-8f8f-4294-9543-a866200b914f.png">
+<img width="1138" src="https://user-images.githubusercontent.com/595772/148701762-6b4e75df-8f8f-4294-9543-a866200b914f.png">
 
 ## References
 
@@ -205,5 +205,3 @@ I referred to the following tutorials and code repos to develop this tutorial:
 - https://longqian.me/2017/02/09/github-jekyll-tag/
 - https://nikitagoncharuk.com/blog/my-custom-code-style-for-typography-by-tailwindcss-highlightjs/
 - https://tjaddison.com/blog/2020/08/updating-to-tailwind-typography-to-style-markdown-posts/
-
-

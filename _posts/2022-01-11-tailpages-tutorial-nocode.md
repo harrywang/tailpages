@@ -9,12 +9,12 @@ Tailpages (Tailwind + Github Pages) is a Jekyll website template based on Tailwi
 Key features are:
 
 - Minimalist design inspired by the [indigo template](https://github.com/sergiokopplin/indigo)
-- Elegent typography via [TailwindCSS Typography plugin](https://tailwindcss.com/docs/typography-plugin) and [Inter font](https://rsms.me/inter/)
-- Markdown support for content authroing (static pages and blogs)
-- Code highligting and styling via [highlight.js](https://highlightjs.org/)
+- Elegant typography via [TailwindCSS Typography plugin](https://tailwindcss.com/docs/typography-plugin) and [Inter font](https://rsms.me/inter/)
+- Markdown support for content authoring (static pages and blogs)
+- Code highlighting and styling via [highlight.js](https://highlightjs.org/) (see [code example](http://harrywang.me/tailpages/2022/01/12/tailpages-tutorial-technical.html))
 
 
-This tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding. I also have a technical tutorial to show how to setup the development environment for Tailpages from scratch, which you can access at [medium](#) or [blog](http://harrywang.me/tailpages/2022/01/12/tutorial-part-2.html). 
+This tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding. I also have a technical tutorial to show how to setup the development environment for Tailpages from scratch, which you can access at [medium](#) or [blog](http://harrywang.me/tailpages/2022/01/12/tailpages-tutorial-technical.html). 
 
 You only need a Github account to go over this tutorial, which has the following key steps using Github web interface (if you know Git, you can do all these by cloning the repo, making changes locally, and pushing the updates to Github): 
 
@@ -42,7 +42,7 @@ Enable the Github Pages: choose main branch and save. Now, you can access the ne
 
 <img width="1014" src="https://user-images.githubusercontent.com/1081826/150206932-3a258cce-c4a4-4863-9c9c-0033df584714.png">
 
-NOTE that the website right now should not look good as following - we need to change some configrations next to fix it. 
+NOTE that the website right now should not look good as following - we need to change some configurations next to fix it. 
 
 <img width="430" src="https://user-images.githubusercontent.com/1081826/150208962-367a05a2-5b40-4b6d-8fdc-bd088eac61b2.png">
 
@@ -59,7 +59,7 @@ Edit the file:
 
 <img width="665" src="https://user-images.githubusercontent.com/1081826/150208297-956f9794-d059-484d-a14b-e5d79802ef20.png">
 
-Then save the page, wait for a few minutes (Github redeploy your website everytime new changes are committed, which may take a few minutes to complete) and your website should look like:
+Then save the page, wait for a few minutes (Github redeploys your website every time new changes are committed, which may take a few minutes to complete) and your website should look like:
 
 <img width="1100" src="https://user-images.githubusercontent.com/1081826/150209796-23851c4d-e63f-449d-a043-6a34cb64c242.png">
 
@@ -79,7 +79,7 @@ Now, go back to `_config.yml` file and change the value for `author-image` to `j
 
 <img width="477" src="https://user-images.githubusercontent.com/1081826/150212047-f17186c0-f8a6-4088-bc06-e11b3bc02db9.png">
 
-Similarly, you can change the social media links and other basic information such as adding google analytics, changing the default theme color and footer information by editting `_config.yml`. You can set the value to `false` to turn off any features you don't want.
+Similarly, you can change the social media links and other basic information such as adding google analytics, changing the default theme color and footer information by editing `_config.yml`. You can set the value to `false` to turn off any features you don't want.
 
 ## Customize Pages and Menu
 
@@ -93,7 +93,7 @@ On top of each Markdown file, there is a section between two `---`, which is cal
 - `permalink` is the url of the page, which does not need to match the name of the markdown file for the page
 - `title` is the title of the page, which does not need to match the name of the markdown file for the page
 
-<img width="910" alt="Screen Shot 2022-01-19 at 4 19 13 PM" src="https://user-images.githubusercontent.com/1081826/150215583-aa05097d-4e52-412b-96d8-9a5108f890f6.png">
+<img width="910" src="https://user-images.githubusercontent.com/1081826/150215583-aa05097d-4e52-412b-96d8-9a5108f890f6.png">
 
 The menu is defined in `_config.yml` file - text is the menu name, permalink must match the page permalink specified in page front matter:
 
@@ -109,7 +109,7 @@ nav-menu:
 
 Next, let's create a new page and change the menu. Add the new file called `skills.md` with front matter and some basic markdown text:
 
-<img width="1013" alt="Screen Shot 2022-01-19 at 4 25 11 PM" src="https://user-images.githubusercontent.com/1081826/150216249-6f575236-4ed9-4b01-924a-ac91535e12be.png">
+<img width="1013" src="https://user-images.githubusercontent.com/1081826/150216249-6f575236-4ed9-4b01-924a-ac91535e12be.png">
 
 
 ```
@@ -126,7 +126,7 @@ I have the following skills:
 - Javascript
 ```
 
-<img width="452" alt="Screen Shot 2022-01-19 at 4 31 57 PM" src="https://user-images.githubusercontent.com/1081826/150217146-5a363716-f42d-44b2-a373-c5ae06396b2f.png">
+<img width="452" src="https://user-images.githubusercontent.com/1081826/150217146-5a363716-f42d-44b2-a373-c5ae06396b2f.png">
 
 after creating the new page, go edit `_config.yml` file to link the page to the menu:
 
@@ -142,14 +142,14 @@ nav-menu:
 
 You should be able to see the new menu and page in a few minutes:
 
-<img width="726" alt="Screen Shot 2022-01-19 at 5 40 29 PM" src="https://user-images.githubusercontent.com/1081826/150230022-095f606b-96f1-4c15-b1ad-c1ac4e90308f.png">
+<img width="726" src="https://user-images.githubusercontent.com/1081826/150230022-095f606b-96f1-4c15-b1ad-c1ac4e90308f.png">
 
 ## Add Blogs
 
 Blog posts are very like pages as discussed above, except a few things:
 
 - Posts have to be created in the `_posts` folder with specific file name format: `YEAR-MM-DD-title.md`, where YEAR is a four-digit number, MM and DD are both two-digit numbers, such as `2022-01-05-my-first-blog.md`
-- Posts can have tags in the front matter - tags are seperated by spaces:
+- Posts can have tags in the front matter - tags are separated by spaces:
 
 ```
 ---
@@ -162,7 +162,7 @@ tags: tutorial no-code
 
 let's create a new post named `2022-01-19-demos.md` in `_post` folder and add the following content:
 
-<img width="872" alt="Screen Shot 2022-01-19 at 6 00 01 PM" src="https://user-images.githubusercontent.com/1081826/150232215-ea26e859-f582-4f7e-a8b5-a584f6c972d5.png">
+<img width="872" src="https://user-images.githubusercontent.com/1081826/150232215-ea26e859-f582-4f7e-a8b5-a584f6c972d5.png">
 
 ```
 ---
@@ -185,13 +185,17 @@ Save the changes and wait for the website to update, then you should see your ne
 
 ## Remove Unused Pages and Assets (Disable Blog)
 
-You can remove unused pages and other assets (such as images) if you want. For example, you can remove the default Bitcoion page:
+You can remove unused pages and other assets (such as images) if you want. For example, you can remove the default Bitcoin page:
 
-<img width="1293" alt="Screen Shot 2022-01-19 at 6 09 09 PM" src="https://user-images.githubusercontent.com/1081826/150233079-77f4cf67-069c-46d2-b45f-e362c673a1d1.png">
+<img width="1293" src="https://user-images.githubusercontent.com/1081826/150233079-77f4cf67-069c-46d2-b45f-e362c673a1d1.png">
 
 If you don't have blogs, you can simply delete the posts in the `_post` folder and delete the blog menu in `_config.yml` file. I suggest you keep the `blog.md` file in case you want to blog later :). 
 
-That's it! Now you can add more contents to your website and I hope you enjoy Tailpages template. 
+## Add Custom Domain
+
+If you have your own domain name, you can follow the documentations [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) to link it to the site you just created.
+
+**That's it!** Now you can add more contents to your website and I hope you enjoy Tailpages template. 
 
 ## References
 
