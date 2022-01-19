@@ -1,14 +1,23 @@
 ---
 layout: post
-title: Tailpages Tutorial Part II
+title: Tailpages Technical Tutorial
 tags: tutorial jekyll github-pages
 ---
 
-This tutorial shows how you start a brand new Jekyll site based on TailwindCSS, which can be hosted by Github Pages. 
+Tailpages (Tailwind + Github Pages) is a Jekyll website template based on TailwindCSS, which can be hosted by Github for free. You can visit the demo site at https://harrywang.me/tailpages/.
+
+Key features are:
+
+- Minimalist design inspired by the [indigo template](https://github.com/sergiokopplin/indigo)
+- Elegent typography via [TailwindCSS Typography plugin](https://tailwindcss.com/docs/typography-plugin) and [Inter font](https://rsms.me/inter/)
+- Markdown support for content authroing (static pages and blogs)
+- Code highligting and styling via [highlight.js](https://highlightjs.org/)
+
+This is a technical tutorial to show how to setup the development environment for Tailpages from scratch. Another no-code tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding, which you can access at [medium](#) or [blog](http://harrywang.me/tailpages/2022/01/12/tutorial-part-2.html)[blog](http://harrywang.me/tailpages/2022/01/11/tutorial-part-1.html).
 
 Let's get started by creating an empty Github repo: 
 
-<img width="500" src="https://user-images.githubusercontent.com/595772/148700857-a054dc43-ba82-4913-9635-cd314a8f74b2.png">
+<img class="mx-auto w-1/2" src="https://user-images.githubusercontent.com/595772/148700857-a054dc43-ba82-4913-9635-cd314a8f74b2.png">
 
 Fork and clone the this repo on your computer and go to the cloned folder: 
 
