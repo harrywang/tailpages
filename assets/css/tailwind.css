@@ -1034,9 +1034,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :where(code):not(:where([class~="not-prose"] *)) {
-  color: var(--tw-prose-code);
-  font-weight: 600;
+  color: #DD1144;
+  font-weight: 400;
   font-size: 0.875em;
+  background-color: #F5F7FA;
+  border-radius: 0.25rem;
 }
 
 .prose :where(a code):not(:where([class~="not-prose"] *)) {
@@ -1044,8 +1046,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :where(pre):not(:where([class~="not-prose"] *)) {
-  color: var(--tw-prose-pre-code);
-  background-color: var(--tw-prose-pre-bg);
+  color: #1F2933;
+  background-color: #F5F7FA;
   overflow-x: auto;
   font-weight: 400;
   font-size: 0.875em;
@@ -1073,10 +1075,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose :where(pre code):not(:where([class~="not-prose"] *))::before {
   content: none;
+  padding-left: unset;
 }
 
 .prose :where(pre code):not(:where([class~="not-prose"] *))::after {
   content: none;
+  padding-right: unset;
 }
 
 .prose :where(table):not(:where([class~="not-prose"] *)) {

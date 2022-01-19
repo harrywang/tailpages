@@ -10,6 +10,22 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
+            pre: {
+              color: "#1F2933",
+              backgroundColor: "#F5F7FA"
+            },
+            "pre code::before": {
+              "padding-left": "unset"
+            },
+            "pre code::after": {
+              "padding-right": "unset"
+            },
+            code: {
+              backgroundColor: "#F5F7FA",
+              color: "#DD1144",
+              fontWeight: "400",
+              "border-radius": "0.25rem"
+            },
             "code::before": false,
             "code::after": false,
             "blockquote p:first-of-type::before": false,
