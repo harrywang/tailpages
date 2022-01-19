@@ -21,7 +21,7 @@ cd tailpages
 
 **NOTE**: for Mac M1 users: follow https://www.earthinversion.com/blogging/how-to-install-jekyll-on-appple-m1-macbook/ to install jekyll ARM compatible version:
 
-```
+```bash
 xcode-select --install
 brew install rbenv ruby-build
 rbenv install 3.0.0
@@ -74,7 +74,7 @@ Now, you can test the site locally:
 
 Add TailwindCSS via NPM:
 
-```
+```bash
 yarn init -y
 yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest postcss-cli
 ```
@@ -83,7 +83,7 @@ Create `tailwind.config.js` and `postcss.config.js` by running `yarn tailwindcss
 
 Enable tailwindcss plugin typography, inter font, and defaultTheme by updating `tailwid.config.js` as follows:
 
-```
+```js
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -116,7 +116,7 @@ yarn add @fontsource/inter
 
 Create a new CSS file with the path `/assets/css/main.css` with the following content:
 
-```
+```css
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
@@ -124,7 +124,7 @@ Create a new CSS file with the path `/assets/css/main.css` with the following co
 
 Add a default layout HTML file to use tailwindcss at `_layouts/default.html`:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
@@ -137,7 +137,7 @@ Add a default layout HTML file to use tailwindcss at `_layouts/default.html`:
   </head>
   <body class="font-sans mx-auto m-4 max-w-prose">
   <div class="prose prose-yellow prose-lg">
-    {{ content }}
+    ...
   </div>
   </body>
 </html>
@@ -186,5 +186,7 @@ I referred to the following tutorials and code repos to develop this tutorial:
 - https://sergiokopplin.github.io/indigo
 - https://github.com/creativetimofficial/notus-js
 - https://longqian.me/2017/02/09/github-jekyll-tag/
+- https://nikitagoncharuk.com/blog/my-custom-code-style-for-typography-by-tailwindcss-highlightjs/
+- https://tjaddison.com/blog/2020/08/updating-to-tailwind-typography-to-style-markdown-posts/
 
 

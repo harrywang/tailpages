@@ -1037,7 +1037,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #DD1144;
   font-weight: 400;
   font-size: 0.875em;
-  background-color: #F5F7FA;
+  padding: 0.2em 0.4em;
+  background-color: #F3F3F3;
   border-radius: 0.25rem;
 }
 
@@ -1047,7 +1048,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose :where(pre):not(:where([class~="not-prose"] *)) {
   color: #1F2933;
-  background-color: #F5F7FA;
+  background-color: #F3F3F3;
   overflow-x: auto;
   font-weight: 400;
   font-size: 0.875em;
@@ -1075,12 +1076,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose :where(pre code):not(:where([class~="not-prose"] *))::before {
   content: none;
-  padding-left: unset;
 }
 
 .prose :where(pre code):not(:where([class~="not-prose"] *))::after {
   content: none;
-  padding-right: unset;
 }
 
 .prose :where(table):not(:where([class~="not-prose"] *)) {

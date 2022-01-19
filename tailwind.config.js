@@ -12,16 +12,11 @@ module.exports = {
           css: {
             pre: {
               color: "#1F2933",
-              backgroundColor: "#F5F7FA"
-            },
-            "pre code::before": {
-              "padding-left": "unset"
-            },
-            "pre code::after": {
-              "padding-right": "unset"
+              backgroundColor: "#F3F3F3"
             },
             code: {
-              backgroundColor: "#F5F7FA",
+              padding: "0.2em 0.4em",
+              backgroundColor: "#F3F3F3",
               color: "#DD1144",
               fontWeight: "400",
               "border-radius": "0.25rem"
