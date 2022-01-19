@@ -74,6 +74,7 @@ DEPENDENCIES
   jekyll (~> 4.2.1)
   jekyll-feed (~> 0.12)
   jekyll-postcss-v2
+  jekyll-seo-tag
   minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data
