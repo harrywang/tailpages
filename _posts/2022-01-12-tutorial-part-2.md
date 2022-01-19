@@ -6,9 +6,9 @@ tags: tutorial jekyll github-pages
 
 This tutorial shows how you start a brand new Jekyll site based on TailwindCSS, which can be hosted by Github Pages. 
 
-## Create a empty Github repo: 
+Let's get started by creating an empty Github repo: 
 
-<img width="847" alt="Screen Shot 2022-01-09 at 3 31 05 PM" src="https://user-images.githubusercontent.com/595772/148700857-a054dc43-ba82-4913-9635-cd314a8f74b2.png">
+<img width="500" src="https://user-images.githubusercontent.com/595772/148700857-a054dc43-ba82-4913-9635-cd314a8f74b2.png">
 
 Fork and clone the this repo on your computer and go to the cloned folder: 
 
@@ -57,7 +57,6 @@ Open `Gemfile` file and add a Jekyll plugin we will need for processing Tailwind
 
 ```
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-postcss-v2'
 end
 ```
@@ -65,14 +64,14 @@ end
 Now, you can test the site locally:
 
 - at the root of this repo folder run `bundle install`
-- (optional for Jekyll 3.0) run `bundle add webrick` according to https://github.com/github/pages-gem/issues/752
-- Then run `bundle exec jekyll serve`
+- run `bundle add webrick` according to https://github.com/github/pages-gem/issues/752
+- run `bundle exec jekyll serve`
 - Open it in your browser: `http://localhost:4000`
 
 
-## Add TailwindCSS
+## Setup TailwindCSS
 
-Add TailwindCSS via NPM:
+Add TailwindCSS:
 
 ```bash
 yarn init -y
@@ -81,7 +80,16 @@ yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest postcss-cli
 
 Create `tailwind.config.js` and `postcss.config.js` by running `yarn tailwindcss init -p`
 
-Enable tailwindcss plugin typography, inter font, and defaultTheme by updating `tailwid.config.js` as follows:
+We use Tailwindcss [Typography plugin](https://tailwindcss.com/docs/typography-plugin) and [Inter font family](https://tailwindui.com/documentation) to style Markdown. I also modify the default Typography CSS to make code style look better.  
+
+Add typography plugin and the font:
+
+```
+yarn add -D @tailwindcss/typography
+yarn add @fontsource/inter
+```
+
+Then, enable typography plugin, inter font, and customizations by updating `tailwid.config.js` as follows:
 
 ```js
 const defaultTheme = require('tailwindcss/defaultTheme')
@@ -93,28 +101,27 @@ module.exports = {
   darkMode: 'media',
   theme: {
     extend: {
+      typography: {...},
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
     },
   },
+
   variants: {
     extend: {},
   },
   plugins: [
     require('@tailwindcss/typography'),
   ],
+
 }
 ```
 
-Add typography plugin and the font:
+**NOTE**: If this is your first time with Tailwind (just like me), you should know that Tailwind is "just-in-time", i.e., Tailwind CSS is generated on-demand as you develop your html pages/templates instead of being generated in advance at initial build time. For example, if you specify `content: ['./**/*.html']` in `tailwind.config.js` as shown above, the just-in-time engine scans all html files in this folder and generate the used styles into a tailwind output css file. For example, if you never used `m-6` in any html file - it won't be ouputed into the file. 
 
-```
-yarn add -D @tailwindcss/typography
-yarn add @fontsource/inter
-```
 
-Create a new CSS file with the path `/assets/css/main.css` with the following content:
+Now we are ready to generate the Tailwind CSS file. First, create a new CSS file at `/assets/css/main.css` with the following content:
 
 ```css
 @tailwind base;
@@ -122,43 +129,44 @@ Create a new CSS file with the path `/assets/css/main.css` with the following co
 @tailwind components;
 ```
 
-Add a default layout HTML file to use tailwindcss at `_layouts/default.html`:
+Then run `npx tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css --watch` to bulid the css file at `./assets/css/tailwind.css`. `--watch` makes sure that the css is regenerated whenever a change is detected in HTML files. 
+
+Now, we can add a default layout HTML file to use Tailwind css at `_layouts/default.html`. Note that I also use [FontAwesome](https://fontawesome.com/) for the icons and [highlight.js](https://highlightjs.org/) for code highlighting.
 
 ```html
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css">
+<head>
+  ...
+  <!-- TailwindCSS and Inter Font-->
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-  </head>
-  <body class="font-sans mx-auto m-4 max-w-prose">
-  <div class="prose prose-yellow prose-lg">
-    ...
-  </div>
-  </body>
-</html>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  
+    <!-- highlight.js -->
+   <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark-dimmed.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+ </head>
 ```
-## Build Tailwind
 
-Run `npx tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css` to bulid the css file.
+## Page Templates
 
-- if you specify `content: ['./**/*.html']` in `tailwind.config.js`, this step scans all html files in this folder and generate the used styles into tailwind.css file. For example, if you never used `m-6` in any html file - it won't be ouput into the file. 
-- add `--watch` to make sure that the css is regenerated whenever a change is detected in HTML/JS files. 
+`_layouts` folder has all page templates, which may include page components, such as Navigation menu, footer, social media icons from files in `_includes` folder: 
 
-create a `page.html` layout to add footer and use a page variable `page.title`. Now, change the `index.md` to use the new template with some basic markdown contents:
+- `default.html` is the base template that all other templates uses
+- `home.html` is the template for the Homepage
+- `page.html` is the template for different pages
+- `post.html` is the template for blog posts
+- `tag.html` is the tempalte for the tag page
 
-```
----
-layout: page
-title: About
----
-...
+## Customize Homepage and Add Pages/Blogs
 
-```
+You can refer to part I of this tutorial for how to customzie homepage and add new pages/blogs.
 
 ## Github Pages Settings
 
@@ -169,11 +177,11 @@ baseurl: "/tailpages" # your repo name
 url: "https://harrywang.github.io" # replace this with your username
 ```
 
-Now, you can test the site: `jekyll serve` and open `http://127.0.0.1:4000/tailpages/` note now the address includes the `baseurl`, you should see the markdown file is styled with beautiful TailwindCSS
+Now, you can test the site: `jekyll serve` and open `http://127.0.0.1:4000/tailpages/` note now the address includes the `baseurl`, you should see the markdown file is styled with beautiful TailwindCSS.
 
 ## Host with Github Pages
 
-You just need to commit all changes and push to the repo. Then, enable Github Papges, then you should be able to visit your site at `https://<username>.github.io/<your-repo>`, such as `https://harrywang.github.io/tailpages` (note that I used a custom domain in the following screenshot):
+You just need to commit all changes and push to the repo. Then, enable Github Papges and you should be able to visit your site at `https://<username>.github.io/<your-repo>`, such as `https://harrywang.github.io/tailpages` (note that I used a custom domain in the following screenshot):
 
 <img width="1138" alt="Screen Shot 2022-01-09 at 4 32 06 PM" src="https://user-images.githubusercontent.com/595772/148701762-6b4e75df-8f8f-4294-9543-a866200b914f.png">
 

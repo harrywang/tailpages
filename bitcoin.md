@@ -15,5 +15,3 @@ Photo by <a href="https://unsplash.com/@wildbook?utm_source=unsplash&utm_medium=
 <img class="mx-auto shadow rounded w-3/4" src="https://user-images.githubusercontent.com/595772/150048945-762ad471-2bc3-424d-91ab-a501a7e8662d.jpeg">
 
 Photo by <a href="https://unsplash.com/@jeremybezanger?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeremy Bezanger</a> on <a href="https://unsplash.com/s/photos/bitcoin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-  
