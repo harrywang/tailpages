@@ -11,6 +11,7 @@ module.exports = {
         DEFAULT: {
           css: {
             pre: {
+              padding: "0",
               color: "#1F2933",
               backgroundColor: "#F3F3F3"
             },
