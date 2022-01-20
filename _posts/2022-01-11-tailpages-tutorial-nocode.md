@@ -38,9 +38,9 @@ Login with your Github account, go to https://github.com/harrywang/tailpages and
 Rename the forked repo to any name you want. Here I rename it to `johndoe`:
 <img width="1020" src="https://user-images.githubusercontent.com/1081826/150206457-cb65ff43-214b-4031-86de-2886b51c789a.png">
 
-Enable the Github Pages: choose main branch and save. Now, you can access the new website at `https://<username>.github.io/<your-repo>` 
+Enable the Github Pages: click the Settings option, choose Pages, select main branch and save. Now, you can access the new website at `https://<username>.github.io/<your-repo>`
 
-<img width="1014" src="https://user-images.githubusercontent.com/1081826/150206932-3a258cce-c4a4-4863-9c9c-0033df584714.png">
+![0_EcsPmERW8Dj9S5HO](https://user-images.githubusercontent.com/595772/150408998-915d3a62-db2b-4429-aff1-98bfbffc4294.png)
 
 NOTE that the website right now should not look good as follows - we need to change some configurations next to fix it. 
 
