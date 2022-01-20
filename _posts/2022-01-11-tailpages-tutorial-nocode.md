@@ -14,7 +14,7 @@ Key features are:
 - Code highlighting and styling via [highlight.js](https://highlightjs.org/) (see [code example](http://harrywang.me/tailpages/2022/01/12/tailpages-tutorial-technical.html))
 
 
-This tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding. I also have a technical tutorial to show how to setup the development environment for Tailpages from scratch, which you can access at [medium](#) or [blog](http://harrywang.me/tailpages/2022/01/12/tailpages-tutorial-technical.html). 
+This tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding. I also have a technical tutorial to show how to setup the development environment for Tailpages from scratch, which you can access at [medium](https://harrywang.medium.com/developing-tailpages-a-jekyll-template-based-on-tailwind-css-b8b51e60e25b) or [blog](http://harrywang.me/tailpages/2022/01/12/tailpages-tutorial-technical.html). 
 
 You only need a Github account to go over this tutorial, which has the following key steps using Github web interface (if you know Git, you can do all these by cloning the repo, making changes locally, and pushing the updates to Github): 
 
@@ -42,7 +42,7 @@ Enable the Github Pages: choose main branch and save. Now, you can access the ne
 
 <img width="1014" src="https://user-images.githubusercontent.com/1081826/150206932-3a258cce-c4a4-4863-9c9c-0033df584714.png">
 
-NOTE that the website right now should not look good as following - we need to change some configurations next to fix it. 
+NOTE that the website right now should not look good as follows - we need to change some configurations next to fix it. 
 
 <img width="430" src="https://user-images.githubusercontent.com/1081826/150208962-367a05a2-5b40-4b6d-8fdc-bd088eac61b2.png">
 
@@ -63,7 +63,7 @@ Then save the page, wait for a few minutes (Github redeploys your website every 
 
 <img width="1100" src="https://user-images.githubusercontent.com/1081826/150209796-23851c4d-e63f-449d-a043-6a34cb64c242.png">
 
-Next, you can upload a profile image to replace the default avatar. Find the `assets\img` folder and add your own profile image (a square image is preferred. The one I uploaded is downloaded from https://unsplash.com/photos/1lGeOg6IULc and renamed to `johndoe.jpeg`):
+Next, you can upload a profile image to replace the default avatar. Find the `assets\img` folder and add your own profile image (a square image is preferred. The one I uploaded was downloaded from https://unsplash.com/photos/1lGeOg6IULc and renamed to `johndoe.jpeg`):
 
 <img width="995" src="https://user-images.githubusercontent.com/1081826/150210081-0a19af28-a9c8-4403-9025-12e65982db65.png">
 
@@ -146,7 +146,7 @@ You should be able to see the new menu and page in a few minutes:
 
 ## Add Blogs
 
-Blog posts are very like pages as discussed above, except a few things:
+Blog posts are very like pages as discussed above, except for a few things:
 
 - Posts have to be created in the `_posts` folder with specific file name format: `YEAR-MM-DD-title.md`, where YEAR is a four-digit number, MM and DD are both two-digit numbers, such as `2022-01-05-my-first-blog.md`
 - Posts can have tags in the front matter - tags are separated by spaces:
@@ -176,7 +176,7 @@ In this post, I talk about my design philosophy and a recent coffee table I made
 <img class="mx-auto w-1/2" src="{{site.baseurl}}/assets/img/coffeetable.png">
 ```
 
-Here I also uploaded a new image named `coffeetable.png` to the `assets\img` folder and inserted the image into the post using the following HTML code snippet: `<img class="mx-auto w-1/2" src="{{site.baseurl}}/assets/img/coffeetable.png">`. Here `w-1/2` defines the image width to be half of the container and you have to use `{{site.baseurl}}` in the path to show image properly. 
+Here I also uploaded a new image named `coffeetable.png` to the `assets\img` folder and inserted the image into the post using the following HTML code snippet: `<img class="mx-auto w-1/2" src="{{site.baseurl}}/assets/img/coffeetable.png">`. Here `w-1/2` defines the image width to be half of the container and you have to use `{{site.baseurl}}` in the path to show the image properly. 
 
 Save the changes and wait for the website to update, then you should see your new post listed at `https://hjwang.github.io/johndoe/blog` page:
 
@@ -193,9 +193,9 @@ If you don't have blogs, you can simply delete the posts in the `_post` folder a
 
 ## Add Custom Domain
 
-If you have your own domain name, you can follow the documentations [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) to link it to the site you just created.
+If you have your own domain name, you can follow the documentation [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) to link it to the site you just created.
 
-**That's it!** Now you can add more contents to your website and I hope you enjoy Tailpages template. 
+**That's it!** Now you can add more content to your website and I hope you enjoy Tailpages template. 
 
 ## References
 

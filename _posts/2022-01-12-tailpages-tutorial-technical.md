@@ -11,15 +11,15 @@ Key features are:
 - Minimalist design inspired by the [indigo template](https://github.com/sergiokopplin/indigo)
 - Elegant typography via [TailwindCSS Typography plugin](https://tailwindcss.com/docs/typography-plugin) and [Inter font](https://rsms.me/inter/)
 - Markdown support for content authoring (static pages and blogs)
-- Code highlighting and styling via [highlight.js](https://highlightjs.org/) (see [code example](http://harrywang.me/tailpages/2022/01/12/tailpages-tutorial-technical.html))
+- Code highlighting and styling via [highlight.js](https://highlightjs.org/) (see examples below)
 
-This is a technical tutorial to show how to setup the development environment for Tailpages from scratch. Another no-code tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding, which you can access at [medium](#) or [blog](http://harrywang.me/tailpages/2022/01/11/tailpages-tutorial-nocode.html).
+This is a technical tutorial to show how to setup the development environment for Tailpages from scratch. Another no-code tutorial shows how you can use Tailpages template to quickly setup your website and blogs without coding, which you can access at [medium](https://harrywang.medium.com/introducing-tailpages-tailwind-github-pages-89903c52d3ec) or [blog](http://harrywang.me/tailpages/2022/01/11/tailpages-tutorial-nocode.html).
 
 Let's get started by creating an empty Github repo: 
 
 <img class="mx-auto w-3/4" src="https://user-images.githubusercontent.com/595772/148700857-a054dc43-ba82-4913-9635-cd314a8f74b2.png">
 
-Fork and clone the this repo on your computer and go to the cloned folder: 
+Fork and clone the repo on your computer and go to the cloned folder: 
 
 ```
 git clone https://github.com/harrywang/tailpages.git
@@ -89,7 +89,7 @@ yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest postcss-cli
 
 Create `tailwind.config.js` and `postcss.config.js` by running `yarn tailwindcss init -p`
 
-We use Tailwindcss [Typography plugin](https://tailwindcss.com/docs/typography-plugin) and [Inter font family](https://tailwindui.com/documentation) to style Markdown. I also modify the default Typography CSS to make code style look better.  
+We use Tailwindcss [Typography plugin](https://tailwindcss.com/docs/typography-plugin) and [Inter font family](https://tailwindui.com/documentation) to style Markdown. I also modify the default Typography CSS to make the code style look better.  
 
 Add typography plugin and the font:
 
@@ -127,7 +127,7 @@ module.exports = {
 }
 ```
 
-**NOTE**: If this is your first time with Tailwind (just like me), you should know that Tailwind is "just-in-time", i.e., Tailwind CSS is generated on-demand as you develop your html pages/templates instead of being generated in advance at initial build time. For example, if you specify `content: ['./**/*.html']` in `tailwind.config.js` as shown above, the just-in-time engine scans all html files in this folder and generate the used styles into a tailwind output css file. For example, if you never used `m-6` in any html file - it won't be outputted into the file. 
+**NOTE**: If this is your first time with Tailwind (just like me), you should know that Tailwind is "just-in-time", i.e., Tailwind CSS is generated on-demand as you develop your html pages/templates instead of being generated in advance at initial build time. For example, if you specify `content: ['./**/*.html']` in `tailwind.config.js` as shown above, the just-in-time engine scans all html files in this folder and generates the used styles into a tailwind output css file. For example, if you never used `m-6` in any html file - it won't be outputted into the file. 
 
 
 Now we are ready to generate the Tailwind CSS file. First, create a new CSS file at `/assets/css/main.css` with the following content:
@@ -167,7 +167,7 @@ Now, we can add a default layout HTML file to use Tailwind css at `_layouts/defa
 
 `_layouts` folder has all page templates, which may include page components, such as Navigation menu, footer, social media icons from files in `_includes` folder: 
 
-- `default.html` is the base template that all other templates uses
+- `default.html` is the base template that all other templates use
 - `home.html` is the template for the Homepage
 - `page.html` is the template for different pages
 - `post.html` is the template for blog posts
@@ -175,7 +175,7 @@ Now, we can add a default layout HTML file to use Tailwind css at `_layouts/defa
 
 ## Customize Homepage and Add Pages/Blogs
 
-You can refer to part I of this tutorial for how to customize homepage and add new pages/blogs.
+You can refer to part I of this tutorial for how to customize the homepage and add new pages/blogs.
 
 ## Github Pages Settings
 
