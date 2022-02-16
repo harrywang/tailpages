@@ -72,6 +72,17 @@
         </a>
         {% endif %}
 
+        {% if site.substack %}
+        <a href="{{site.substack}}" target="_blank">
+          <button
+            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+            type="button">
+            <i class="fas fa-paper-plane iconify" data-icon="simple-icons:substack"></i>
+            
+          </button>
+        </a>
+        {% endif %}
+
         {% if site.email %}
         <a href="{{site.email}}" target="_blank">
           <button
@@ -81,6 +92,7 @@
           </button>
         </a>
         {% endif %}
+
 
       </div>
     </div>
