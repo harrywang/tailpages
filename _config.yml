@@ -3,15 +3,15 @@ baseurl: "/tailpages" # the name of your github repo
 url: "https://chickensmitten.github.io" # the url of your github pages
 
 # site information used in page title, meta data etc.
-title: "Jammedthoughts"
-description: A conversation with my younger self
+title: "JammedThoughts"
+description: Conversations with my younger self
 
 # color theme for links
 theme-color: indigo # indigo|yellow|pink|green|stone|
 
 # homepage information
 author: JammedThoughts
-author-bio: Word Smith  # change to false to hide
+author-bio: Hi, my name is Sheng. I write to share my sense of wonder. My writings vary but they are generally about epistemology, blockchains, NFTs, Cryptocurrencies etc. Click on any of the icons below to know what I am working on now.  # change to false to hide
 author-image: profile.jpeg  # file must be in the /assets/img/ folder
 
 # navigation menu
