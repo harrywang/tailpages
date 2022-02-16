@@ -7,15 +7,16 @@ title: "JammedThoughts"
 description: Conversations with my younger self
 
 # color theme for links
-theme-color: indigo # indigo|yellow|pink|green|stone|
+theme-color: green # indigo|yellow|pink|green|stone|
 
 # homepage information
 author: JammedThoughts
 author-bio: Hi, my name is Sheng. I write to share my sense of wonder. My writings vary but they are generally about epistemology, blockchains, NFTs, Cryptocurrencies etc. Click on any of the icons below to know what I am working on now.  # change to false to hide
 author-image: profile.jpeg  # file must be in the /assets/img/ folder
+bitcoin-image: bitcoinQR.png
 
 # navigation menu
-show-nav-menu: true
+show-nav-menu: false
 
 nav-menu:
 - text: About
