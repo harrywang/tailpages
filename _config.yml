@@ -7,7 +7,7 @@ title: "MBBU"
 description: MBBU website
 
 # color theme for links
-theme-color: indigo # indigo|yellow|pink|green|stone|
+theme-color: "blue-700" # indigo|yellow|pink|green|stone|
 
 # homepage information
 author: MBBU
@@ -45,3 +45,4 @@ google-analytics: G-WCRC1TC2V5
 # jekyll plugins - no need to change
 plugins:
   - jekyll-seo-tag
+  - jekyll-postcss
