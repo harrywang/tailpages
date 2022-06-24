@@ -1,12 +1,12 @@
 ---
-layout: page
+layout: default
 title: Bitcoin History
 permalink: bitcoin
 ---
 
 > Bitcoin (₿) is a decentralized digital currency, without a central bank or single administrator, that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries. Transactions are verified by network nodes through cryptography and recorded in a public distributed ledger called a blockchain. The cryptocurrency was invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto. - Wikipedia
 
-The following two images are all uploaded to Github issue - the first one is inserted using Markdown and the second one is inserted using HTML - either way is fine although I think HTML way gives you more control such as width, style, etc. 
+The following two images are all uploaded to Github issue - the first one is inserted using Markdown and the second one is inserted using HTML - either way is fine although I think HTML way gives you more control such as width, style, etc.
 
 ![dmitry-demidko-OG3A-ilG8AY-unsplash](https://user-images.githubusercontent.com/595772/149054244-43d31a99-8794-4bc6-8dee-4a02ef322f10.jpeg)
 
