@@ -8,6 +8,7 @@ description: MBBU website
 
 # color theme for links
 theme-color: "blue-700" # indigo|yellow|pink|green|stone|
+theme-color-dark: "blue-400"
 
 # homepage information
 author: MBBU
