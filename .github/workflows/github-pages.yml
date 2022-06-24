@@ -1,54 +1,25 @@
-name: Jekyll Deploy
+name: Build and deploy Jekyll site to GitHub Pages
 
 on:
-  schedule:
-    # run daily at 05:30
-    - cron:  '30 5 * * *'
   push:
     branches:
-      - main
+      - main # or master before October 2020
       - development
-    paths-ignore:
-      - 'Gemfile'
-      - 'README.md'
-      - 'LICENSE.md'
 
-# Build site using jekyll
 jobs:
-  jekyll:
+  github-pages:
     runs-on: ubuntu-latest
     steps:
-      # checkout code
       - uses: actions/checkout@v2
-      # Use ruby/setup-ruby to shorten build times
-      # https://github.com/ruby/setup-ruby
-      - uses: ruby/setup-ruby@v1
+      - name: Install Dependencies
+        run: npm install
+      - uses: actions/cache@v2
         with:
-          ruby-version: 3.0 # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      - name: Install deps
-        run: bundle install
-      # Install Node as this is needed for PostCSS
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      # Install PostCSS plugins (from your package.json)
-      - run: npm install
-      - name: Build site
-      # use jekyll-action-ts to build
-      # https://github.com/limjh16/jekyll-action-ts
-        uses: limjh16/jekyll-action-ts@v2
-        with:
-          enable_cache: true
-          # custom_opts: '--verbose --trace'  #'--drafts --future'
-          ### If you need to specify any Jekyll build options, enable the above input
-          ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
-      # use actions-gh-pages to deploy
-      # https://github.com/peaceiris/actions-gh-pages
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          # GITHUB_TOKEN secret is set up automatically
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses: helaili/jekyll-action@v2    # Choose any one of the Jekyll Actions
+        with:                                # Some relative inputs of your action
+          token: ${{ secrets.GITHUB_TOKEN }}
+          target-branch: 'gh-pages'
