@@ -47,10 +47,3 @@ google-analytics: G-WCRC1TC2V5
 plugins:
   - jekyll-seo-tag
   - jekyll-postcss-v2
-
-sass:
-  load_paths:
-    - _sass
-    - node_modules
-
-include: ["node_modules/tailwindcss"]
