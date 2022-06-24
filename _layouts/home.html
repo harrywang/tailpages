@@ -1,21 +1,15 @@
 ---
 layout: default
 ---
-{% if site.show-nav-menu %}
-  {% include nav.html%}
-{% endif %}
-
-<div class="mx-auto text-center prose prose-{{site.theme-color}}">
-  <div>
-    <img class="object-cover mx-auto h-36 w-36 rounded-full" src="{{site.baseurl}}/assets/img/{{site.author-image}}"
-      alt="author profile image">
-    <h1>{{site.author}}</h1>
+<div
+  class="mx-auto flex flex-1 flex-wrap flex-col md:flex-row w-full items-center justify-between p-8 dark:bg-gray-800">
+  <div class="flex flex-col py-16 text-center md:text-start">
+    <h2 class="text-8xl text-{{site.theme-color}} dark:text-{{site.theme-color-dark}} py-2">
+      MBBU
+    </h2>
+    <p class="text-lg text-gray-500 dark:text-gray-400">Molecular Biology & Bioinformatics Unit </p>
   </div>
-  {% if site.author-bio %}
-  <p class="text-gray-500 pb-4">{{site.author-bio}}</p>
-  {% endif %}
+  <div class="flex flex-col items-center justify-center w-2/5">
+    <img src="{{site.baseurl}}/assets/img/illustration.svg" alt="illustration" class="w-full">
+  </div>
 </div>
-</div>
-
-{% include social-media.html %}
-{% include footer.html %}

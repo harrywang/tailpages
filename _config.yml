@@ -1,29 +1,30 @@
 # change the followings to match your Github username and repo name
-baseurl: "/tailpages" # the name of your github repo
-url: "https://harrywang.github.io" # the url of your github pages
+baseurl: "" # the name of your github repo
+url: "https://mbbu.github.io" # the url of your github pages
 
 # site information used in page title, meta data etc.
-title: "Tailpages: Tailwind + Github Pages"
-description: A Github Pages (Jekyll) template based on TailwindCSS
+title: "MBBU"
+description: MBBU website
 
 # color theme for links
-theme-color: indigo # indigo|yellow|pink|green|stone|
+theme-color: "blue-700" # indigo|yellow|pink|green|stone|
+theme-color-dark: "blue-400"
 
 # homepage information
-author: Satoshi Nakamoto
-author-bio: Creator of Bitcoin  # change to false to hide
-author-image: 279.png  # file must be in the /assets/img/ folder
+author: MBBU
+author-bio: Molecular Biology and Bioinformatics Unit # change to false to hide
+author-image: 279.png # file must be in the /assets/img/ folder
 
 # navigation menu
 show-nav-menu: true
 
 nav-menu:
-- text: About
-  permalink: about
-- text: Bitcoin
-  permalink: bitcoin
-- text: Blog
-  permalink: blog
+  - text: About
+    permalink: about
+  - text: Bitcoin
+    permalink: bitcoin
+  - text: Blog
+    permalink: blog
 
 # use false to turn off any social media links
 twitter: https://twitter.com/
@@ -44,4 +45,5 @@ google-analytics: G-WCRC1TC2V5
 
 # jekyll plugins - no need to change
 plugins:
-    - jekyll-seo-tag
+  - jekyll-seo-tag
+  - jekyll-postcss-v2
