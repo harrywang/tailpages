@@ -258,6 +258,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 226)
+  jekyll-commonmark-ghpages
   jekyll-postcss-v2
   jekyll-seo-tag
   minima (~> 2.5)
