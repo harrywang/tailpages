@@ -19,7 +19,7 @@ while [[ $# > 0 ]]; do
         ;;
     -u | --user)
         SRC_BRANCH="source"
-        DEPLOY_BRANCH="master"
+        DEPLOY_BRANCH="main"
         ;;
     -s | --src)
         SRC_BRANCH="$2"
