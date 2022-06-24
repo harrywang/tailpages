@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main # or master before October 2020
+      - development
 
 jobs:
   github-pages:
@@ -22,6 +23,3 @@ jobs:
         with:                                # Some relative inputs of your action
           token: ${{ secrets.GITHUB_TOKEN }}
           target-branch: 'gh-pages'
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
-          JEKYLL_ENV: production
