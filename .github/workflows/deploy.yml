@@ -3,11 +3,9 @@ name: deploy
 on:
   push:
     branches:
-      - master
       - main
   pull_request:
     branches:
-      - master
       - main
 
 jobs:
@@ -47,7 +45,7 @@ jobs:
         fi
         echo "::set-output name=DEPLOY_BRANCH::gh-pages"
     - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
-        with:
-          branch: ${{ steps.setup.outputs.DEPLOY_BRANCH }} # The branch the action should deploy to.
-          folder: _site # The folder the action should deploy.
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      with:
+        branch: ${{ steps.setup.outputs.DEPLOY_BRANCH }} # The branch the action should deploy to.
+        folder: _site # The folder the action should deploy.
