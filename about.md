@@ -51,3 +51,4 @@ Our headquarter is in the city center of Hamburg, but all of our work is done re
 
 - **Memberships**:
   *KI Bundesverband* | *DE:Hub Logistics*
+

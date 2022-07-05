@@ -43,8 +43,8 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Komm
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
 Fuxlab GmbH \
-Brentanostraße 12 \
-22609 Hamburg
+St. Annenufer 2 \
+20457 Hamburg
 
 Telefon: +49 (0) 40 55820585 \
 E-Mail: mail@fuxlab.com
