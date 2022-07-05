@@ -1,6 +1,7 @@
 # change the followings to match your Github username and repo name
 # the name of your github repo
-baseurl: "/portfolio" 
+baseurl: "/" 
+# baseurl: "/portfolio" 
 
 # the url of your github pages
 url: "https://fuxlab.com"
