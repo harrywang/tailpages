@@ -26,8 +26,8 @@ nav-menu:
   permalink: products
 - text: About
   permalink: about
-- text: Blog
-  permalink: blog
+- text: Insights
+  permalink: insights
 - text: Contact
   permalink: contact
 
