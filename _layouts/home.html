@@ -5,16 +5,23 @@ layout: default
   {% include nav.html%}
 {% endif %}
 
-<div class="mx-auto text-center prose prose-{{site.theme-color}}">
-  <div>
-    <img class="object-cover mx-auto h-36 w-36 rounded-full" src="{{site.baseurl}}/assets/img/{{site.author-image}}"
-      alt="author profile image">
-    <h1>{{site.author}}</h1>
+
+<div class="relative sm:overflow-hidden">
+  <div class="absolute inset-0">
+    <img class="h-full w-full object-cover" src="{{site.baseurl}}/assets/img/maxim-berg-h9sljx2r4Vk-unsplash.jpg" alt="People working on laptops">
+    <div class="absolute inset-0 bg-white opacity-50"></div>
   </div>
-  {% if site.author-bio %}
-  <p class="text-gray-500 pb-4">{{site.author-bio}}</p>
-  {% endif %}
-</div>
+  <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+    <h1 class="text-xl font-extrabold tracking-tight sm:text-4xl lg:text-6xl">
+      <span class="block text-black">
+        Fuxlab
+      </span>
+    </h1>
+    <p class="mt-6 max-w-lg mx-auto text-xl text-black sm:max-w-3xl">
+      develops and invests in environment friendly,<br/>
+      intelligent digital products.
+    </p>
+  </div>
 </div>
 
 {% include social-media.html %}

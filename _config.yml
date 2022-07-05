@@ -1,46 +1,52 @@
 # change the followings to match your Github username and repo name
-baseurl: "/tailpages" # the name of your github repo
-url: "https://harrywang.github.io" # the url of your github pages
+# the name of your github repo
+baseurl: "/portfolio" 
+
+# the url of your github pages
+url: "https://fuxlab.github.io" 
+# url: "http://localhost:4000" # DEV
 
 # site information used in page title, meta data etc.
-title: "Tailpages: Tailwind + Github Pages"
-description: A Github Pages (Jekyll) template based on TailwindCSS
+title: "Fuxlab, HH"
+description: "Product Development, Hamburg"
 
 # color theme for links
-theme-color: indigo # indigo|yellow|pink|green|stone|
+theme-color: stone # indigo|yellow|pink|green|stone|
 
 # homepage information
-author: Satoshi Nakamoto
-author-bio: Creator of Bitcoin  # change to false to hide
-author-image: 279.png  # file must be in the /assets/img/ folder
+author: Fuxlab
+author-bio: develops and invests in environment friendly, intelligent digital products.  # change to false to hide
+author-image: fuxlab_transparent_black.png  # file must be in the /assets/img/ folder
 
 # navigation menu
 show-nav-menu: true
 
 nav-menu:
+- text: Products
+  permalink: products
 - text: About
   permalink: about
-- text: Bitcoin
-  permalink: bitcoin
 - text: Blog
   permalink: blog
+- text: Contact
+  permalink: contact
 
 # use false to turn off any social media links
-twitter: https://twitter.com/
-facebook: https://facebook.com/
-instagram: https://instagram.com/
-github: https://github.com/
-linkedin: https://linkedin.com/
+twitter: https://twitter.com/fuxlab
+facebook: https://facebook.com/fuxlab
+instagram: https://instagram.com/fuxlab
+github: https://github.com/fuxlab
+linkedin: https://linkedin.com/company/fuxlab
 medium: false
 google-scholar: false
-email: false
+email: mailto:mail@fuxlab.com
 
 # footer information
-footer-msg: "Powered by Tailpages"
-footer-msg-link: https://github.com/harrywang/tailpages
+footer-msg: "by Fuxlab GmbH, Hamburg"
+footer-msg-link: https://fuxlab.com/contact/
 
 # google analytics
-google-analytics: G-WCRC1TC2V5
+google-analytics: UA-131500555-1
 
 # jekyll plugins - no need to change
 plugins:
