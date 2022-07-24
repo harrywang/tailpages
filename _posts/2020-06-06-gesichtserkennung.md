@@ -3,6 +3,7 @@ layout: post
 title: Risiken der Bilderkennung - Gesichtserkennung (DE)
 tags: de computer-vision ml ai
 permalink: de/risiken-der-bilderkennung/gesichtserkennung
+author: Fuxlab
 ---
 
 Bei der Gesichtserkennung wird zwischen einer einfachen Lokalisierung von vorhandenen Gesichtern, sowie der biometrischen (Wieder-) Erkennung von bekannten Personen unterschieden.

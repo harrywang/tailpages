@@ -3,6 +3,7 @@ layout: post
 title: Permanent https-Redirect with Cloudflare
 permalink: cloudflare-https-redirect
 tags: tech cloudflare architecture
+author: Fuxlab
 ---
 
 You want to redirect your old domain to a new once?

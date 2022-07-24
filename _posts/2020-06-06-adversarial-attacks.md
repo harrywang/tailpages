@@ -3,6 +3,7 @@ layout: post
 title: Risiken der Bilderkennung - Adversarial Attacks (DE)
 tags: de computer-vision ml ai
 permalink: de/risiken-der-bilderkennung/adversarial-attacks
+author: Fuxlab
 ---
 
 In vielen alltäglichen Bereichen werden Machine Learning Algorithmen eingesetzt um dem Nutzer mehr Komfort zu bieten oder Arbeitsabläufe zu beschleunigen. Entscheidungen werden ihm abgenommen oder Inhalte so vorbereitet, dass diese nur noch bestätigt werden müssen. Beispiele mit Bezug zur Bilderkennung hierfür sind z.B. automatische Belegverwaltungen in Firmen oder die Kennzeichenerkennung unter öffentlicher Hand. Jede dieser Programme wird mit Input – dem Bild – gefüttert, woraus man ein entsprechendes Ergebnis basierend auf diesem erwartet. Bei der Belegverwaltung ist dieses beispielhaft der Betrag und Empfänger einer Rechnung, bei der Kennzeichenerfassung das extrahierte Kennzeichen und evtl. Randinformationen über das Fahrzeug.

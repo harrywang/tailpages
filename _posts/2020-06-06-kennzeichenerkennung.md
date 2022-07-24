@@ -3,6 +3,7 @@ layout: post
 title: Risiken der Bilderkennung - Kennzeichenerkennung (DE)
 tags: de computer-vision ml ai
 permalink: de/risiken-der-bilderkennung/kennzeichenerkennung
+author: Fuxlab
 ---
 
 ### Kennzeichenüberwachung in Deutschland
