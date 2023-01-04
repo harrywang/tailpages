@@ -1,11 +1,11 @@
 # change the followings to match your Github username and repo name
 # the name of your github repo
-# baseurl: "/" 
-baseurl: "/portfolio"  # DEV
+baseurl: "/"
+# baseurl: "/portfolio"  # USE THIS ONLY FOR LOCALHOST
 
 # the url of your github pages
 url: "https://fuxlab.com"
-# url: "http://localhost:4000" # DEV
+# url: "http://localhost:4000" # USE THIS ONLY FOR LOCALHOST
 
 # site information used in page title, meta data etc.
 title: "Fuxlab, HH"
