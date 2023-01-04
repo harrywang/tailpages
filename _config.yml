@@ -1,7 +1,7 @@
 # change the followings to match your Github username and repo name
 # the name of your github repo
-baseurl: "/" 
-# baseurl: "/portfolio" 
+# baseurl: "/" 
+baseurl: "/portfolio"  # DEV
 
 # the url of your github pages
 url: "https://fuxlab.com"
@@ -9,10 +9,10 @@ url: "https://fuxlab.com"
 
 # site information used in page title, meta data etc.
 title: "Fuxlab, HH"
-description: "Product Development, Hamburg"
+description: "Digital Product Development, Hamburg"
 
 # color theme for links
-theme-color: stone # indigo|yellow|pink|green|stone|
+theme-color: green # indigo|yellow|pink|green|stone|
 
 # homepage information
 author: Fuxlab
@@ -25,10 +25,12 @@ show-nav-menu: true
 nav-menu:
 - text: Products
   permalink: products
-- text: About
-  permalink: about
+- text: Partner
+  permalink: partner
 - text: Insights
   permalink: insights
+- text: About
+  permalink: about
 - text: Contact
   permalink: contact
 
@@ -38,9 +40,10 @@ facebook: https://facebook.com/fuxlab
 instagram: https://instagram.com/fuxlab
 github: https://github.com/fuxlab
 linkedin: https://linkedin.com/company/fuxlab
+youtube: https://youtube.com/@fuxlab
 medium: false
 google-scholar: false
-email: mailto:mail@fuxlab.com
+email: https://fuxlab.com/contact
 
 # footer information
 footer-msg: "by Fuxlab GmbH, Hamburg"
@@ -52,3 +55,12 @@ google-analytics: UA-131500555-1
 # jekyll plugins - no need to change
 plugins:
     - jekyll-seo-tag
+
+collections:
+  partners:
+    type: true
+    output: true
+  products:
+    output: true
+  tools:
+    output: true

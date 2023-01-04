@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% if site.show-nav-menu %}
+  {% include nav.html%}
+{% endif %}
+
+<div class="py-12 px-4 lg:flex lg:items-center lg:justify-between">
+  <h2 class="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+    <a href="{{site.baseurl}}/tools" class="block text-green-600">
+      Technology
+    </a>
+    <span class="block">
+      {{ page.title }}
+    </span>
+  </h2>
+  {% if page.cta_text %}
+  <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+    <div class="inline-flex rounded-md">
+      <a href="{{ page.cta_link }}" class="inline-flex items-center justify-center rounded-3xl border border-transparent bg-black px-5 py-3 text-base font-medium text-white hover:bg-green-600">
+        {{ page.cta_text }}
+      </a>
+    </div>
+  </div>
+  {% endif %}
+</div>

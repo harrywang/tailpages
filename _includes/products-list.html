@@ -1,0 +1,22 @@
+<div class="px-4 {{ include.class }}">
+  <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">   
+    {% for product in include.products %}
+      <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+        <a href="{{site.baseurl}}{{ product.permalink }}">
+          <img src="{{site.baseurl}}{{product.image1}}" class="opacity-70 hover:opacity-100 grayscale hover:grayscale-0 max-w-full"  />
+          <span class="font-medium block mt-2">{{ product.title | split: " - " | first }}</span>
+        </a>
+      </div>
+      {% if forloop.last %}
+        {% assign rest = forloop.index | modulo:3 %}
+        {% if rest == 1 %}
+          <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8"></div>
+          <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8"></div>
+        {% endif %}
+        {% if rest == 2%}
+          <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8"></div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

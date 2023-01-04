@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% if site.show-nav-menu %}
+  {% include nav.html%}
+{% endif %}
+
+<div class="py-12 px-4 lg:flex lg:items-center lg:justify-between">
+  <h2 class="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+    <span class="block">Products</span>
+  </h2>
+</div>
+
+<h3 class="px-4 text-2xl font-bold tracking-tight text-gray-900 md:text-3xl">
+  <span class="block text-green-600">Travel</span>
+</h3>
+{% assign travel-products=site.products| where: "type", "travel" %}
+{% include products-list.html products=travel-products class="pb-12" %}
+
+<h3 class="px-4 text-2xl font-bold tracking-tight text-gray-900 md:text-3xl">
+  <span class="block text-green-600">SaaS</span>
+</h3>
+{% assign saas-products=site.products| where: "type", "saas" %}
+{% include products-list.html products=saas-products class="pb-12" %}
+
+
+<h3 class="px-4 text-2xl font-bold tracking-tight text-gray-900 md:text-3xl">
+  <span class="block text-green-600">Apps</span>
+</h3>
+{% assign app-products=site.products| where: "type", "app" %}
+{% include products-list.html products=app-products class="pb-12" %}
+
+{% include footer.html %}

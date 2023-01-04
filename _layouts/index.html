@@ -1,0 +1,106 @@
+---
+layout: default
+---
+{% if site.show-nav-menu %}
+  {% include nav.html%}
+{% endif %}
+
+<div class="relative sm:overflow-hidden">
+  <div class="absolute inset-0">
+    <img class="h-full w-full object-cover" src="{{site.baseurl}}/assets/img/maxim-berg-h9sljx2r4Vk-unsplash.jpg" alt="">
+    <div class="absolute inset-0 bg-white opacity-50"></div>
+  </div>
+  <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <span class="block">
+          Digital Product Development
+        </span>
+      </h2>
+      <div class="mt-8 flex justify-center">
+        <div class="inline-flex rounded-md">
+          <a href="{{site.baseurl}}/products" class="inline-flex items-center justify-center rounded-3xl border border-transparent bg-black px-5 py-3 text-base font-medium text-white hover:bg-gray-700">
+            Products
+          </a>
+        </div>
+        <div class="ml-3 inline-flex">
+          <a href="{{site.baseurl}}/partner" class="inline-flex items-center justify-center rounded-3xl border border-transparent bg-gray-200 px-5 py-3 text-base font-medium text-black hover:bg-green-200">
+            Technologies
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="px-4 py-24">
+  <div class="mx-auto max-w-xl lg:max-w-none">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+        our aim is it to create smart digital processes,<br/>
+        with state of the art technologies.
+      </h2>
+    </div>
+    <div class="mx-auto mt-12 grid max-w-sm grid-cols-1 gap-y-10 gap-x-8 sm:max-w-none lg:grid-cols-2">
+      <div class="text-center sm:flex sm:text-left lg:block lg:text-center">
+        <div class="sm:flex-shrink-0">
+          <div class="flow-root">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto h-16 w-16">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+            </svg>
+          </div>
+        </div>
+        <div class="mt-3 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
+          <h3 class="text-sm font-medium text-gray-900">data processing</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            Generate / Aggregate (<a class="underline" href="{{site.baseurl}}/tool/gpt">GPT</a>, <a class="underline" href="{{site.baseurl}}/partner/googlecloud">Spreadsheets</a>, <a class="underline" href="{{site.baseurl}}/partner/aws">MTurk</a>)<br/>
+            Classification / Validation / Correction / Refining (<a class="underline" href="{{site.baseurl}}/tool/pytorch">PyTorch</a>, <a class="underline" href="{{site.baseurl}}/tool/tensorflow">Tensorflow</a>)<br/>
+            Onsite Search (<a class="underline" href="{{site.baseurl}}/tool/meilisearch">Meilisearch</a>, <a class="underline" href="{{site.baseurl}}/tool/elasticsearch">ElasticSearch</a>)<br/>
+            Automation (<a class="underline" href="{{site.baseurl}}/partner/cloudflare">Workers</a>, IFTTT, Zapier)<br/>
+            Analyse (Analytics, Looker, Airbyte)
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center sm:flex sm:text-left lg:block lg:text-center">
+        <div class="sm:flex-shrink-0">
+          <div class="flow-root">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto h-16 w-16">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+            </svg>
+          </div>
+        </div>
+        <div class="mt-3 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
+          <h3 class="text-sm font-medium text-gray-900">fullstack product development</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            Backends (<a class="underline" href="{{site.baseurl}}/tool/wagtail">Wagtail</a>, <a class="underline" href="{{site.baseurl}}/tool/rails">Rails</a>)<br/>
+            Frontends (<a class="underline" href="{{site.baseurl}}/tool/react">React</a>, <a class="underline" href="{{site.baseurl}}/tool/wordpress">Wordpress</a>, <a class="underline" href="{{site.baseurl}}/tool/static">Static</a>)<br/>
+            APIs (<a class="underline" href="{{site.baseurl}}/tool/graphql">GraphQL</a>, <a class="underline" href="{{site.baseurl}}/tool/rest">REST</a>)<br/>
+            Apps (<a class="underline" href="{{site.baseurl}}/tool/ios">iOS</a>, <a class="underline" href="{{site.baseurl}}/tool/android">Android</a>, <a class="underline" href="{{site.baseurl}}/tool/hybrid">Hybrid</a>)<br/>
+            CI / CD (github, gitlab, circleci, NewRelic)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pt-12 px-4">
+  <p class="text-center text-lg font-semibold text-gray-600">
+    We scale Cloud Products with ..
+  </p>
+</div>
+{% assign scale-partner=site.partners| where: "type", "scale" %}
+{% include partners-list.html partners=scale-partner class="pb-12" %}
+
+
+<div class="pt-12 px-4">
+  <p class="text-center text-lg font-semibold text-gray-600">
+    For Wordpress Projects we use ..
+  </p>
+</div>
+{% assign wordpress-partner=site.partners| where: "type", "wordpress" %}
+{% include partners-list.html partners=wordpress-partner class="pb-12" %}
+
+{% include social-media.html %}
+{% include footer.html %}

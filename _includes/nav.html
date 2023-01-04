@@ -2,9 +2,12 @@
   <div class="container mx-auto flex flex-wrap items-center justify-between">
     <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
       <a
-        class="text-sm font-bold leading-relaxed inline-block mr-4 px-2 py-2 whitespace-nowrap uppercase text-black"
+        class="flex mr-4 px-2 py-2"
         href="{{site.baseurl}}/">
-          <img class="h-6 w-6 rounded-full object-cover mx-auto" src="{{site.baseurl}}/assets/img/{{site.author-image}}" />
+          {% include logos/fuxlab.svg class="h-7 w-7 mx-auto" %}
+          <div class="inline-flex ml-3 text-lg whitespace-nowrap uppercase text-black font-bold">
+            Fuxlab
+          </div>
       </a>
       <button
         class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"

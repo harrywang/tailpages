@@ -5,12 +5,12 @@ layout: default
   {% include nav.html%}
 {% endif %}
 
-<div class="px-4 pt-4 prose prose-{{site.theme-color}}">
-    <h1 class="text-center mt-6 mb-6">{{ page.title }}</h1>
-    
-    <div class="font-serif text-lg tracking-tight font-light leading-8">
-      {{content}}
-    </div>
-</div>
+<article class="px-4 pt-4  pb-8 prose !max-w-none !w-full">
+  <h1 class="text-center mt-6 mb-6">{{ page.title }}</h1>
+  
+  <div class="font-serif text-lg tracking-tight font-light leading-8">
+    {{content}}
+  </div>
+</article>
 
 {% include footer.html %}

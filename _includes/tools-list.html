@@ -1,0 +1,21 @@
+<div class="px-4 {{ include.class }}">
+  <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">   
+    {% for tool in include.tools %}
+      <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+        <a href="{{site.baseurl}}{{ tool.permalink }}">
+          <span class="font-medium block mt-2">{{ tool.title | split: " - " | first }}</span>
+        </a>
+      </div>
+      {% if forloop.last %}
+        {% assign rest = forloop.index | modulo:3 %}
+        {% if rest == 1 %}
+          <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8"></div>
+          <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8"></div>
+        {% endif %}
+        {% if rest == 2%}
+          <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8"></div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
