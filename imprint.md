@@ -6,8 +6,8 @@ permalink: imprint
 
 ## Angaben gemäß § 5 TMG
 Fuxlab GmbH \
-St. Annenufer 2 \
-20457 Hamburg
+Am Südhang 4 \
+49545 Tecklenburg
 
 Handelsregister: HRB 157045 \
 Amtsgericht: Hamburg
@@ -25,8 +25,8 @@ UST-ID
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 F. Cieslik \
-St. Annenufer 2 \
-20457 Hamburg
+Am Südhang 4 \
+49545 Tecklenburg
 
 ## Streitschlichtung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr.
