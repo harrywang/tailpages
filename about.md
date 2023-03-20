@@ -8,7 +8,7 @@ permalink: about
 
 Fuxlab is a research and development company for digital products. We are problem solvers, engineers & strategists in almost all areas of software development.
 Our Mission is to produce and deliver secure solutions, providing our clients with neutral, trusted, and scalable data-driven products.
-Our headquarter is in the city center of Hamburg, but all of our work is done remotely from all over the world.
+All of our work is done decentrally from all over the world.
 
 ## Tech Services
 
