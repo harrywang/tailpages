@@ -8,7 +8,7 @@ url: "https://fuxlab.com"
 # url: "http://localhost:4000" # USE THIS ONLY FOR LOCALHOST
 
 # site information used in page title, meta data etc.
-title: "Fuxlab, HH"
+title: "Fuxlab"
 description: "Digital Product Development, Hamburg"
 
 # color theme for links
@@ -46,7 +46,7 @@ google-scholar: false
 email: https://fuxlab.com/contact
 
 # footer information
-footer-msg: "by Fuxlab GmbH, Hamburg"
+footer-msg: "by Fuxlab GmbH"
 footer-msg-link: https://fuxlab.com/contact/
 
 # google analytics
